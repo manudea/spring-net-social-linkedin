@@ -41,7 +41,6 @@ namespace Spring.Social.LinkedIn.Api.Impl
         /// The group posts base URL
         /// </summary>
         public static String GroupPostsBaseUrl = BaseUrl + "posts/";
-
         /// <summary>
         /// The group details URL
         /// </summary>
@@ -65,7 +64,7 @@ namespace Spring.Social.LinkedIn.Api.Impl
         /// <summary>
         /// The group posts URL
         /// </summary>
-        public static String GroupPostsUrl = GroupBaseUrl + "{groupId}/posts:(id,creation-timestamp,title,summary,creator:(id,first-name,last-name,picture-url,headline),likes,attachment:(image-url,content-domain,content-url,title,summary),relation-to-viewer)?order=recency" + Format.Replace("?", "&");
+        public static String GroupPostsUrl = GroupBaseUrl + "{groupId}/posts:(id,creation-timestamp,title,summary,creator:(id,first-name,last-name,picture-url,headline),likes,attachment:(image-url,content-domain,content-url,title,summary),relation-to-viewer,site-group-post-url)?order=recency" + Format.Replace("?", "&");
         /// <summary>
         /// The group post comments URL
         /// </summary>

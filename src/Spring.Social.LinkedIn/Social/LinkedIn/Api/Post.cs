@@ -70,6 +70,14 @@ namespace Spring.Social.LinkedIn.Api
         public PostRelation RelationToViewer { get; set; }
 
         /// <summary>
+        /// Gets or sets the site group post URL.
+        /// </summary>
+        /// <value>
+        /// The site group post URL.
+        /// </value>
+        public string SiteGroupPostUrl { get; set; }
+
+        /// <summary>
         /// Gets or sets the summary.
         /// </summary>
         public String Summary { get; set; }

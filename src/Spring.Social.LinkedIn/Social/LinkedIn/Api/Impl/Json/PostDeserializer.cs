@@ -44,6 +44,7 @@ namespace Spring.Social.LinkedIn.Api.Impl.Json {
             post.Likes = mapper.Deserialize<IList<LinkedInProfile>>(json.GetValue("likes"));
             //TODO RelationToViewer = DeserializePostRelation(json.GetValue("relation-to-viewer"));
             post.Summary = json.GetValueOrDefault<string>("summary", String.Empty);
+            post.SiteGroupPostUrl = json.GetValueOrDefault<string>("siteGroupPostUrl", String.Empty);
 
             return post;
         }
